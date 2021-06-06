@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+	<defs>
+		<image width="300" height="200" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAADIAQMAAABoEU4WAAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAAB5JREFUeJztwTEBAAAAwqD1T20Hb6AAAAAAAAAA4DceeAABWjPaUAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #000000 } 
+		.txt1 { font-size: 24px;fill: #000000;font-weight: 400;font-family: "AlibabaPuHuiTi-Regular", "Alibaba PuHuiTi" } 
+		.txt2 { font-size: 15px;fill: #000000;font-weight: 400;font-family: "AlibabaPuHuiTi-Regular", "Alibaba PuHuiTi" } 
+		.txt3 { font-size: 12px;fill: #000000;font-weight: 400;font-family: "AlibabaPuHuiTi-Regular", "Alibaba PuHuiTi" } 
+	</style>
+	<use id="Background" href="#img1" x="0" y="0" />
+	<path id="形状 1" class="shp0" d="M150 40L155 40L155 147L150 147L150 40Z" />
+	<path id="形状 1 copy 2" class="shp0" d="M150 42.73L146.82 41L72.89 139.5L76.08 141.24L150 42.73Z" />
+	<path id="形状 1 copy" class="shp0" d="M71.01 140.01L150 140.01L150 145L71.01 145L71.01 140.01Z" />
+	<text id="t " style="transform: matrix(1,0,0,1,100,131)" >
+		<tspan x="0" y="0" class="txt1">t</tspan>
+	</text>
+	<text id="x " style="transform: matrix(1,0,0,1,170,103)" >
+		<tspan x="0" y="0" class="txt1">x</tspan>
+	</text>
+	<text id="1 " style="transform: matrix(1,0,0,1,110,170)" >
+		<tspan x="0" y="0" class="txt1">1</tspan>
+	</text>
+	<text id="2 " style="transform: matrix(1,0,0,1,87,78)" >
+		<tspan x="0" y="0" class="txt2">2</tspan>
+	</text>
+	<text id="1 - 2 " style="transform: matrix(1,0,0,1,108,49)" >
+		<tspan x="0" y="0" class="txt3">1</tspan>
+		<tspan x="0" y="13.44" class="txt3">-</tspan>
+		<tspan x="0" y="26.88" class="txt3">2</tspan>
+	</text>
+	<text id="(1+x  ) " style="transform: matrix(1,0,0,1,37,90)" >
+		<tspan x="0" y="0" class="txt1">(1+x  )</tspan>
+	</text>
+</svg>
