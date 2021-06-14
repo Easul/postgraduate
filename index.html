@@ -9,6 +9,12 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js"></script>
+  <style>
+    :root {
+      --docsifytabs-border-color: #ededed;
+      --docsifytabs-tab-highlight-color: #42b983;
+    }
+  </style>
 </head>
 <body style="background-color: #fefefe;">
   <div id="app"></div>
@@ -23,7 +29,36 @@
       search: {
         maxAge: 3600,
         paths: [
+          '/数学/笔记/文档/00_中学知识',
+          '/数学/笔记/文档/00_常用公式',
           '/数学/笔记/文档/01_极限',
+          '/数学/笔记/文档/02_一元微分',
+          '/数学/笔记/文档/03_一元积分',
+          '/数学/笔记/文档/04_多元微分',
+          '/数学/笔记/文档/05_二重积分',
+          '/数学/笔记/文档/06_代数与几何',
+          '/数学/笔记/文档/07_三重积分-曲线曲面积分',
+          '/数学/笔记/文档/08_常微分方程',
+          '/数学/笔记/文档/09_无穷级数',
+          '/数学/笔记/文档/10_线性代数',
+          '/英语/daily',
+          '/政治/马原/第一章',
+          '/政治/马原/第二章',
+          '/专业课/操作系统/第一章',
+          '/专业课/操作系统/第二章',
+          '/专业课/操作系统/第三章',
+          '/专业课/操作系统/第四章',
+          '/专业课/操作系统/第五章',
+          '/专业课/计算机网络/第一章',
+          '/专业课/计算机组成原理/第一章',
+          '/专业课/计算机组成原理/第二章',
+          '/专业课/计算机组成原理/第三章',
+          '/专业课/计算机组成原理/第四章',
+          '/专业课/计算机组成原理/第五章',
+          '/专业课/计算机组成原理/第六章',
+          '/专业课/计算机组成原理/第七章',
+          '/专业课/数据结构/第一章',
+          '/使用技巧/dot',
           '/使用技巧/katex',
           '/使用技巧/markdown',
         ],
@@ -49,6 +84,13 @@
             return this.origin.code.apply(this, arguments);
           }
         }
+      },
+      tabs: {
+        persist    : true,      // default
+        sync       : true,      // default
+        theme      : 'classic', // default
+        tabComments: true,      // default
+        tabHeadings: true       // default
       }
     }
   </script>
@@ -56,6 +98,7 @@
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/components/prism-java.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/components/prism-json.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/components/prism-xml-doc.min.js"></script>
