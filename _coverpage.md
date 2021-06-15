@@ -3,4 +3,4 @@
 
 ![](./images/lofigirl.png)
 
-![color](#000000)
+![color](#f0f0f0)
