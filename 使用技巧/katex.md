@@ -223,16 +223,16 @@ a_{i=3}^{5}
 
 ## 矩阵
 ````markdown
-\begin{pmatrix}
+\begin{bmatrix}
    a & b \\
    c & d
-\end{pmatrix}
+\end{bmatrix}
 ````
 ```tex
-\begin{pmatrix}
+\begin{bmatrix}
    a & b \\
    c & d
-\end{pmatrix}
+\end{bmatrix}
 ```
 
 ## 行列式
@@ -247,6 +247,20 @@ a_{i=3}^{5}
    a & b \\
    c & d
 \end{vmatrix}
+```
+
+## 多个公式
+````markdown
+\begin{cases}
+f(x) = x  \\
+g(x) = 2x
+\end{cases}
+````
+```tex
+\begin{cases}
+f(x) = x  \\
+g(x) = 2x
+\end{cases}
 ```
 
 ## 交并符号
