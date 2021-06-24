@@ -87,7 +87,7 @@
         }
       },
       plugins: [
-      function(hook, vm) {
+        function(hook, vm) {
             hook.doneEach(function() {
               var onlineMusic = document.querySelector("#onlineMusic");
 
@@ -95,13 +95,19 @@
                 return ;
               }
               
-              var image = new Image();
-              image.onload = function() {
-                onlineMusic.setAttribute("src", "//www.youtube.com/embed/5qap5aO4i9A");
-                onlineMusic.setAttribute("width", "220");
-                onlineMusic.setAttribute("height", "124");
-              }
-              image.src = "//youtube.com/favicon.ico";
+              var timestamp = new Date().getTime();
+              var loadFunction = setInterval(function() {
+                if (image.complete) {
+                  onlineMusic.setAttribute("src", "//www.youtube.com/embed/5qap5aO4i9A");
+                  clearInterval(loadFunction);
+                } else {
+                  var currentTimestamp = new Date().getTime();
+                  if (currentTimestamp - timestamp >= 20000) {
+                    image.src="";
+                    clearInterval(loadFunction);
+                  }
+                }
+              }, 100);
             });
         },
         function(hook, vm) {
