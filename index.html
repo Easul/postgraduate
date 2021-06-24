@@ -103,6 +103,8 @@
               var loadFunction = setInterval(function() {
                 if (image.complete) {
                   onlineMusic.setAttribute("src", "//www.youtube.com/embed/5qap5aO4i9A");
+                  onlineMusic.setAttribute("width", "220");
+                  onlineMusic.setAttribute("height", "124");
                   clearInterval(loadFunction);
                 } else {
                   var currentTimestamp = new Date().getTime();
