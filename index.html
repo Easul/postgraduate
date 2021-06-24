@@ -87,9 +87,21 @@
         }
       },
       plugins: [
-        function(hook, vm) {
+      function(hook, vm) {
             hook.doneEach(function() {
-              document.querySelector("div.mask").style.opacity='0.4';
+              var onlineMusic = document.querySelector("#onlineMusic");
+
+              if (onlineMusic == null) {
+                return ;
+              }
+              
+              var image = new Image();
+              image.onload = function() {
+                onlineMusic.setAttribute("src", "//www.youtube.com/embed/5qap5aO4i9A");
+                onlineMusic.setAttribute("width", "560");
+                onlineMusic.setAttribute("height", "315");
+              }
+              image.src = "//youtube.com/favicon.ico";
             });
         },
         function(hook, vm) {
@@ -99,6 +111,7 @@
             next(html + newHtml);
           });
           hook.doneEach(function() {
+            document.querySelector("div.mask").style.opacity='0.4';
             var currentPageRoute = "/aboive" + vm.route.path;
             var readCounterHTML =  
               '<span id="' + currentPageRoute + '" class="leancloud_visitors" data-flag-title="' + currentPageRoute + ' ">'
